@@ -717,10 +717,10 @@
 
 <!-- CTA TOP -->
 <div class="cta-block">
-  <a class="cta" href="https://agape-course.com/osteogynecology" target="_blank" rel="noopener" id="ctaTop">
+  <button class="cta gc-button" type="button" id="ctaTop">
     Попасть в предзапись
-  </a>
-  <span class="cta__hint">6–7 июня · Москва + онлайн · депозит от 5 000 ₽</span>
+  </button>
+  <span class="cta__hint">6–7 июня · Москва + онлайн</span>
 </div>
 
 <!-- ══════ БОЛЬ СПЕЦИАЛИСТА ══════ -->
@@ -911,30 +911,10 @@
       <div class="seminar__note">
         Группа ограничена. Очный формат — ещё меньше мест. Депозит бронирует место и не сгорает.
       </div>
-      <div class="price-row">
-        <div class="price-card">
-          <div class="price-card__label">Депозит</div>
-          <div class="price-card__new">5 000 ₽</div>
-          <div class="price-card__hint">бронь места</div>
-        </div>
-        <div class="price-card">
-          <div class="price-card__label">Онлайн</div>
-          <div class="price-card__old">65 000 ₽</div>
-          <div class="price-card__new">50 000 ₽</div>
-          <div class="price-card__hint">полная оплата</div>
-        </div>
-        <div class="price-card is-hot">
-          <div class="price-card__label">Очно</div>
-          <div class="price-card__old">75 000 ₽</div>
-          <div class="price-card__new">60 000 ₽</div>
-          <div class="price-card__hint">полная оплата</div>
-        </div>
-      </div>
       <div class="cta-block" style="margin-top:0">
-        <a class="cta" href="https://agape-course.com/osteogynecology" target="_blank" rel="noopener" id="ctaBottom">
+        <button class="cta gc-button" type="button" id="ctaBottom">
           Попасть в предзапись
-        </a>
-        <span class="cta__hint">agape-course.com/osteogynecology</span>
+        </button>
       </div>
     </div>
   </div>
@@ -945,9 +925,9 @@
   <div class="wrap">
     <div class="footer-cta__caption">Посмотрите видео — и все сомнения уйдут</div>
     <div class="cta-block" style="margin:0">
-      <a class="cta" href="https://agape-course.com/osteogynecology" target="_blank" rel="noopener">
+      <button class="cta gc-button" type="button">
         Попасть в предзапись
-      </a>
+      </button>
       <span class="cta__hint">6–7 июня · Москва + онлайн</span>
     </div>
   </div>
@@ -1002,6 +982,13 @@
   // Инициализация — YouTube по умолчанию
   loadVideo('youtube');
 })();
+
+// ====== GETCOURSE — вставьте скрипт формы сюда ======
+// Все кнопки имеют класс .gc-button
+// Пример подключения:
+// document.querySelectorAll('.gc-button').forEach(btn => {
+//   btn.addEventListener('click', () => { /* открыть форму GetCourse */ });
+// });
 </script>
 </body>
 </html>
