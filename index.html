@@ -473,28 +473,27 @@
   .pain__quote {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 32px 36px;
+    border-left: 4px solid var(--warm);
+    border-radius: 0 20px 20px 0;
+    padding: 28px 32px;
     box-shadow: var(--shadow-sm);
-    position: relative;
     margin-bottom: 24px;
   }
-  .pain__quote::before {
-    content: '«';
-    position: absolute;
-    top: 16px; left: 24px;
+  .pain__quote-mark {
     font-family: 'Unbounded', sans-serif;
-    font-size: 60px;
+    font-size: 32px;
     line-height: 1;
     color: var(--warm-soft);
     font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
   }
   .pain__quote-text {
     font-size: clamp(15px, 1.65vw, 17px);
     color: var(--ink-soft);
     line-height: 1.7;
     margin: 0 0 18px;
-    padding-top: 8px;
   }
   .pain__quote-text strong { color: var(--ink); font-weight: 700; }
   .pain__quote-author {
@@ -511,6 +510,7 @@
     width: 28px; height: 2px;
     background: var(--warm-line);
     border-radius: 2px;
+    flex-shrink: 0;
   }
   .pain__conclusion {
     background: linear-gradient(135deg, var(--warm-soft) 0%, var(--surface) 100%);
@@ -731,7 +731,8 @@
       <p class="pain__sub">Женщины с болями, дисфункциями таза, шрамами и гинекологическими запросами приходят к специалистам — но те не знают, что с этим делать. Вот реальный пример:</p>
 
       <div class="pain__quote">
-        <p class="pain__quote-text">«Женщины и не знают к кому обратиться с проблемами мышц тазового дна, с дикими болями при половом акте. К гинекологу? <strong>Не поможет.</strong> Из личной практики: гинеколог предложила молодой женщине самостоятельно освоить упражнения Кегеля, невролог предложил круче — <strong>перерезать половой нерв.</strong> А у молодой женщины мышцы тазового дна в дисбалансе, одни в гипертонусе, спазмированы, другие в гипотонусе — провисли, таз перекручен, связки тазобедренного сустава просят помощи... Постепенно решили проблемы. <strong>Олег, спасибо, что поднимаете женские темы.</strong>»</p>
+        <span class="pain__quote-mark">«»</span>
+        <p class="pain__quote-text">Женщины и не знают к кому обратиться с проблемами мышц тазового дна, с дикими болями при половом акте. К гинекологу? <strong>Не поможет.</strong> Из личной практики: гинеколог предложила молодой женщине самостоятельно освоить упражнения Кегеля, невролог предложил круче — <strong>перерезать половой нерв.</strong> А у молодой женщины мышцы тазового дна в дисбалансе, одни в гипертонусе, спазмированы, другие в гипотонусе — провисли, таз перекручен, связки тазобедренного сустава просят помощи... Постепенно решили проблемы. <strong>Олег, спасибо, что поднимаете женские темы.</strong></p>
         <div class="pain__quote-author">Лилия — специалист, участник эфира</div>
       </div>
 
