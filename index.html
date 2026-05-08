@@ -445,6 +445,86 @@
   }
   .why__text strong { color: var(--warm); font-weight: 700; }
 
+  /* ══ БОЛЬ СПЕЦИАЛИСТА ══ */
+  .pain {
+    padding: 70px 0 60px;
+  }
+  .pain__inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .pain__title {
+    font-size: clamp(24px, 3.4vw, 40px);
+    color: var(--ink);
+    margin: 0 auto 16px;
+    max-width: 820px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .pain__title em { font-style: normal; color: var(--accent); }
+  .pain__sub {
+    text-align: center;
+    font-size: clamp(15px, 1.6vw, 17px);
+    color: var(--ink-soft);
+    max-width: 680px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+  }
+  .pain__quote {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 36px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    margin-bottom: 24px;
+  }
+  .pain__quote::before {
+    content: '«';
+    position: absolute;
+    top: 16px; left: 24px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--warm-soft);
+    font-weight: 700;
+  }
+  .pain__quote-text {
+    font-size: clamp(15px, 1.65vw, 17px);
+    color: var(--ink-soft);
+    line-height: 1.7;
+    margin: 0 0 18px;
+    padding-top: 8px;
+  }
+  .pain__quote-text strong { color: var(--ink); font-weight: 700; }
+  .pain__quote-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    font-weight: 600;
+  }
+  .pain__quote-author::before {
+    content: '';
+    display: block;
+    width: 28px; height: 2px;
+    background: var(--warm-line);
+    border-radius: 2px;
+  }
+  .pain__conclusion {
+    background: linear-gradient(135deg, var(--warm-soft) 0%, var(--surface) 100%);
+    border: 1px solid var(--warm-line);
+    border-radius: 16px;
+    padding: 22px 28px;
+    font-size: clamp(15px, 1.65vw, 17px);
+    color: var(--ink);
+    font-weight: 600;
+    line-height: 1.55;
+    text-align: center;
+  }
+  .pain__conclusion em { font-style: normal; color: var(--warm); }
+
   /* ══ НИЖНИЙ CTA ══ */
   .footer-cta {
     padding: 36px 0 80px;
@@ -612,9 +692,9 @@
 <!-- ══════ HERO ══════ -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero__eyebrow">Запись эфира · Остеогинекология</div>
-    <h1 class="hero__title h-display">Работа с тазом — <em>ответы на все вопросы</em> перед семинаром</h1>
-    <p class="hero__hint">Смотрите эфир — Олег Агапэ отвечает честно и без воды</p>
+    <div class="hero__eyebrow">Запись эфира · 6–7 июня · Москва + онлайн</div>
+    <h1 class="hero__title h-display">Остеогинекология — <em>как применять в работе с клиентами</em> при кистах, шрамах после кесарево, болях и дисфункциях таза</h1>
+    <p class="hero__hint">Олег Агапэ отвечает на вопросы специалистов перед семинаром — честно и без воды</p>
 
     <div class="video-wrap">
       <div class="video-toggle" role="tablist" aria-label="Выбор плеера">
@@ -638,23 +718,42 @@
 <!-- CTA TOP -->
 <div class="cta-block">
   <a class="cta" href="https://agape-course.com/osteogynecology" target="_blank" rel="noopener" id="ctaTop">
-    Записаться на семинар
+    Попасть в предзапись
   </a>
   <span class="cta__hint">6–7 июня · Москва + онлайн · депозит от 5 000 ₽</span>
 </div>
 
+<!-- ══════ БОЛЬ СПЕЦИАЛИСТА ══════ -->
+<section class="pain">
+  <div class="wrap">
+    <div class="pain__inner">
+      <h2 class="pain__title h-section">Огромный пласт клиентов остаётся <em>без помощи</em></h2>
+      <p class="pain__sub">Женщины с болями, дисфункциями таза, шрамами и гинекологическими запросами приходят к специалистам — но те не знают, что с этим делать. Вот реальный пример:</p>
+
+      <div class="pain__quote">
+        <p class="pain__quote-text">«Женщины и не знают к кому обратиться с проблемами мышц тазового дна, с дикими болями при половом акте. К гинекологу? <strong>Не поможет.</strong> Из личной практики: гинеколог предложила молодой женщине самостоятельно освоить упражнения Кегеля, невролог предложил круче — <strong>перерезать половой нерв.</strong> А у молодой женщины мышцы тазового дна в дисбалансе, одни в гипертонусе, спазмированы, другие в гипотонусе — провисли, таз перекручен, связки тазобедренного сустава просят помощи... Постепенно решили проблемы. <strong>Олег, спасибо, что поднимаете женские темы.</strong>»</p>
+        <div class="pain__quote-author">Лилия — специалист, участник эфира</div>
+      </div>
+
+      <div class="pain__conclusion">
+        Если вы не умеете работать с зоной органов малого таза — <em>вы упускаете целый класс запросов,</em> с которыми клиент всё равно к вам приходит
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══════ О ЧЁМ ЭФИР ══════ -->
 <section class="about-webinar">
   <div class="wrap">
-    <h2 class="about-webinar__title h-section">О чём <em>этот эфир?</em></h2>
+    <h2 class="about-webinar__title h-section">Этот эфир — для <em>телесников и остеопатов,</em> которые хотят работать с гинекологическими случаями</h2>
     <div class="about-webinar__body">
-      <p>Если вы — телесник, остеопат или реабилитолог — и думаете об обучении остеогинекологии, но ещё не решились: <strong>скорее всего, у вас есть вопросы.</strong></p>
-      <p>Нужно ли мед. образование? Где граница моей компетенции? Как объяснять клиенту такую работу? В этом эфире Олег Агапэ <strong>отвечает честно</strong> на 15 самых частых вопросов, которые задают перед семинаром.</p>
+      <p>Вы уже работаете с телом — но <strong>зона малого таза остаётся слепым пятном.</strong> Непонятно, с чего начать, где границы, как объяснить клиенту и нужно ли медицинское образование.</p>
+      <p>Олег Агапэ отвечает честно на <strong>15 самых частых вопросов</strong> перед семинаром по остеогинекологии. Без воды — конкретно про практику.</p>
     </div>
 
     <div class="about-webinar__result">
       <span class="about-webinar__result-label">После просмотра</span>
-      <p class="about-webinar__result-text">Вы получите <em>полную ясность</em> — подходит ли вам этот семинар и что конкретно даст вашей практике</p>
+      <p class="about-webinar__result-text">Вы получите <em>полную ясность</em> — подходит ли вам этот семинар и что конкретно даст вашей практике с клиентами</p>
     </div>
   </div>
 </section>
@@ -832,7 +931,7 @@
       </div>
       <div class="cta-block" style="margin-top:0">
         <a class="cta" href="https://agape-course.com/osteogynecology" target="_blank" rel="noopener" id="ctaBottom">
-          Забронировать место
+          Попасть в предзапись
         </a>
         <span class="cta__hint">agape-course.com/osteogynecology</span>
       </div>
@@ -846,7 +945,7 @@
     <div class="footer-cta__caption">Посмотрите видео — и все сомнения уйдут</div>
     <div class="cta-block" style="margin:0">
       <a class="cta" href="https://agape-course.com/osteogynecology" target="_blank" rel="noopener">
-        Записаться на семинар
+        Попасть в предзапись
       </a>
       <span class="cta__hint">6–7 июня · Москва + онлайн</span>
     </div>
